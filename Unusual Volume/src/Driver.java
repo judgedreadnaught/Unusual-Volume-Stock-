@@ -17,9 +17,9 @@ public class Driver {
 		stock.lastVol();
 		boolean x = stock.calculator();
 		if (x) {
-			System.out.println("\ntrue");
+			System.out.println("\nThere is an alarming increase in volume! BUY BUY BUY!  ");
 		} else {
-			System.out.println("\nfalse");
+			System.out.println("\nNothing unusual");
 		}
 	
 		

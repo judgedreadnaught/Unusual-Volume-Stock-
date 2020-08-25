@@ -26,11 +26,11 @@ public class Stock {
 	
 	public void initialVol() {
 		try {
-			volData = 65; // this is the data-reactid number that gives the volume of the stock, increases by 15 for each previous date's volume 
-			dateData = 52;
+			volData = 65 ; // this is the data-reactid number that gives the volume of the stock, increases by 15 for each previous date's volume 
+			dateData = 52 ;
 			Elements vol = website.getElementsByAttributeValue("data-reactid", volData.toString());
 			Elements date = website.getElementsByAttributeValue("data-reactid", dateData.toString());
-			System.out.println(date.text() + "the current volume is: " + vol.text() + ".");
+			System.out.println(date.text() + " the current volume is: " + vol.text() + ".");
 			volume = Integer.parseInt(vol.text().replaceAll(",", "")); // volume of the stock 
 		} catch (Exception e) {
 			System.err.close();
